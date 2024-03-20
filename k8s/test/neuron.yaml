@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: neuron-test
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: neuron-test
+  template:
+    metadata:
+      labels:
+        app: neuron-test
+    spec:
+      containers:
+      - name: neuron
+        image: neurox-by-las/neuron:0.11
+        env:
+        - name: NEURON_ID
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        # (기타 환경 변수 생략)

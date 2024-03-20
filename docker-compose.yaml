@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: '3'
+
+services:
+  neuron:
+    build: .
+    environment:
+      - RUST_LOG=debug
+      - NEURON_ID=neuron_1
+      - NUM_INPUTS=10
+      - NEURON_ADDR=[::]:50051
+      - SUPERVISOR_ADDR=http://supervisor:50052
+    ports:
+      - "50051:50051"
+    depends_on:
+      - supervisor
+
+  supervisor:
+    build: .
+    environment:
+      - RUST_LOG=debug
+      - SUPERVISOR_ADDR=[::]:50052
+      - TELEGRAM_BOT_TOKEN=your_telegram_bot_token
+      - TELEGRAM_CHAT_ID=your_telegram_chat_id
+    ports:
+      - "50052:50052"
