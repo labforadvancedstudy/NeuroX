@@ -9,7 +9,7 @@ You can find the detailed paper on NeuroX [here](https://github.com/labforadvanc
 
 ## Getting Started
 
-Clone the repository: git clone https://github.com/lab-for-advanced-study/neurox.git
+Clone the repository: git clone https://github.com/labforadvancedstudy/NeuroX.git
 Configure the environment variables (e.g., NEURON_ID, TELEGRAM_BOT_TOKEN, etc.).
 Build and run the services using Docker Compose: docker-compose up --build
 Interact with the system using the Telegram bot or gRPC client.
