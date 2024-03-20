@@ -1,14 +1,11 @@
-# NeuroX by Lab for Advanced Study
+# NeuroX by Lab for Advanced Study (WIP)
 
-NeuroX is a distributed neural network system designed to process various types of input data, learn from the data, and generate outputs. It consists of a network of Neuron services that can be extended with specialized input processing capabilities using extension modules.
+NeuroX is an innovative distributed neural network system designed to simulate the human brain by processing various types of input data, learning from the data, and generating outputs. The system architecture is based on a network of interconnected Neuron services that can be extended with specialized input processing capabilities using extension modules. NeuroX aims to provide a scalable and fault-tolerant solution for building and deploying artificial intelligence applications that mimic the functioning of the human brain, taking into account the complex interactions between different brain regions and the role of neurotransmitters in modulating neural activity.
 
-## Features
+You can find the detailed paper on NeuroX [here](https://github.com/labforadvancedstudy/paper/blob/main/NeuroX.md).
 
-Distributed architecture for scalability and fault tolerance
-Support for various input types (images, webhooks, messages)
-Extensible design allowing for easy integration of new features
-Real-time monitoring and management of Neuron services
-User interaction through a Telegram bot interface
+# WORK IN PROGRESS
+
 
 ## Getting Started
 
